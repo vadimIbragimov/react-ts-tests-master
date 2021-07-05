@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TwoButtons component should mount TwoButtons component 1`] = `
+<TwoButtons>
+  <div
+    className="blank-div"
+  >
+    <Button
+      className="one-button"
+    >
+      <Wave>
+        <button
+          className="ant-btn one-button"
+          onClick={[Function]}
+          type="button"
+        >
+          <LoadingIcon
+            existIcon={false}
+            loading={false}
+            prefixCls="ant-btn"
+          >
+            <CSSMotion
+              motionName="ant-btn-loading-icon-motion"
+              onAppearActive={[Function]}
+              onAppearStart={[Function]}
+              onEnterActive={[Function]}
+              onEnterStart={[Function]}
+              onLeaveActive={[Function]}
+              onLeaveStart={[Function]}
+              removeOnLeave={true}
+              visible={false}
+            >
+              <DomWrapper />
+            </CSSMotion>
+          </LoadingIcon>
+          <span
+            key=".0"
+          >
+            Кнопка 1
+          </span>
+        </button>
+      </Wave>
+    </Button>
+    <Button>
+      <Wave>
+        <button
+          className="ant-btn"
+          onClick={[Function]}
+          type="button"
+        >
+          <LoadingIcon
+            existIcon={false}
+            loading={false}
+            prefixCls="ant-btn"
+          >
+            <CSSMotion
+              motionName="ant-btn-loading-icon-motion"
+              onAppearActive={[Function]}
+              onAppearStart={[Function]}
+              onEnterActive={[Function]}
+              onEnterStart={[Function]}
+              onLeaveActive={[Function]}
+              onLeaveStart={[Function]}
+              removeOnLeave={true}
+              visible={false}
+            >
+              <DomWrapper />
+            </CSSMotion>
+          </LoadingIcon>
+          <span
+            key=".0"
+          >
+            Кнопка 2
+          </span>
+        </button>
+      </Wave>
+    </Button>
+  </div>
+</TwoButtons>
+`;
+
+exports[`TwoButtons component should render TwoButtons component 1`] = `
+<div
+  class="blank-div"
+>
+  <button
+    class="ant-btn one-button"
+    type="button"
+  >
+    <span>
+      Кнопка 1
+    </span>
+  </button>
+  <button
+    class="ant-btn"
+    type="button"
+  >
+    <span>
+      Кнопка 2
+    </span>
+  </button>
+</div>
+`;
+
+exports[`TwoButtons component should slhallow TwoButtons component 1`] = `
+<div
+  className="blank-div"
+>
+  <Button
+    className="one-button"
+  >
+    Кнопка 1
+  </Button>
+  <Button>
+    Кнопка 2
+  </Button>
+</div>
+`;
