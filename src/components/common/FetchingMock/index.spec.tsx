@@ -24,13 +24,12 @@ const mocks = [
 
 describe('FetchingMock component', () => {
   it('должен загружаться текст', async () => {
-    const component = mount(
+    const component = await mount(
       <MockedProvider mocks={mocks}>
         <FetchingMock />
       </MockedProvider>
     );
-    await new Promise(resolve => setTimeout(resolve));
-    console.log(component.children())
+    await act(() => new Promise(resolve => setTimeout(resolve)));
     expect(component.find('span').text()).toEqual('qweqwe');
   });
 });

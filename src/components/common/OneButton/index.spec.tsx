@@ -13,15 +13,15 @@ describe('OneButton component', () => {
 
   it('должен запускать onClick при клике', () => {
     const mockCallback = jest.fn();
-    component.setProps({onClick: mockCallback})
-    component.simulate('click')
-    expect(mockCallback.mock.calls.length).toBe(1)
+    component.setProps({onClick: mockCallback});
+    component.simulate('click');
+    expect(mockCallback.mock.calls.length).toBe(1);
   })
 
   it('onClick должен принимать true', () => {
     const mockCallback = jest.fn();
-    component.setProps({onClick: mockCallback})
-    component.simulate('click')
+    component.setProps({onClick: mockCallback});
+    component.simulate('click');
     expect(mockCallback.mock.calls[0][0]).toBeTruthy();
   })
 });
